@@ -1,4 +1,4 @@
-<h2> New User  </h2>
+<h2 style="text-align: center;"> New User  </h2>
 <div class="container" style="text-align: center;">
 <%= form_tag users_path, remote: true , multipart: true do %>
   <br>
@@ -14,9 +14,7 @@
   <%= label_tag :phone %><br>
   <%= text_field_tag "user[phone]"%> <br><br>
 
-  <%#= label_tag :mobile_no %>
-  <%#= number_field_tag "user[mobile_no]"%><br>
-  <%= submit_tag "Create User"%>
+  <%= submit_tag "Create User", class: "btn btn-primary" %>
 <% end %>  
 
 </div>
