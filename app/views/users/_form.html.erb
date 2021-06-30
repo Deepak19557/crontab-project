@@ -1,0 +1,22 @@
+<h2> New User  </h2>
+<div class="container" style="text-align: center;">
+<%= form_tag users_path, remote: true , multipart: true do %>
+  <br>
+  <%= label_tag :first_name %><br>
+  <%= text_field_tag "user[name]"%> <br><br>
+
+  <%= label_tag :email %><br>
+  <%= text_field_tag "user[email]"%> <br><br>
+
+  <%= label_tag :age %><br>
+  <%= text_field_tag "user[age]"%> <br><br>
+
+  <%= label_tag :phone %><br>
+  <%= text_field_tag "user[phone]"%> <br><br>
+
+  <%#= label_tag :mobile_no %>
+  <%#= number_field_tag "user[mobile_no]"%><br>
+  <%= submit_tag "Create User"%>
+<% end %>  
+
+</div>

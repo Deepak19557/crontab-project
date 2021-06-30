@@ -1,0 +1,4 @@
+$(".user_form").html("<%= escape_javascript(render partial: 'users/form' ) %>");
+$(".user_list").append("<%= escape_javascript(render partial: 'users/new_record', locals: { user: @user } ) %>");
+
+
